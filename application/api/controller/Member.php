@@ -17,8 +17,8 @@ use Exception;
  */
 class Member extends Common
 {
-    private $appId = "wx632e85c6659b8919";
-    private $appSecret = "7d768a186e4f26a4b815fed508d81ca6";
+    private $appId = "";
+    private $appSecret = "";
 
     /**
      * 扫码分享进来的用户
