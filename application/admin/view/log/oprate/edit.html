@@ -1,0 +1,64 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-username" class="form-control" name="row[username]" type="text" value="{$row.username|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nickname" class="form-control" name="row[nickname]" type="text" value="{$row.nickname|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Key')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-key" class="form-control " rows="5" name="row[key]" cols="50">{$row.key|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Value')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-value" class="form-control " rows="5" name="row[value]" cols="50">{$row.value|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Catedata')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="catedataList" item="vo"}
+            <label for="row[catedata]-{$key}"><input id="row[catedata]-{$key}" name="row[catedata]" type="radio" value="{$key}" {in name="key" value="$row.catedata"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tablename')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tablename" class="form-control" name="row[tablename]" type="text" value="{$row.tablename|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Coupond_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-coupond_id" data-rule="required" data-source="coupond/index" class="form-control selectpage" name="row[coupond_id]" type="text" value="{$row.coupond_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Coupond_code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-coupond_code" class="form-control" name="row[coupond_code]" type="text" value="{$row.coupond_code|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

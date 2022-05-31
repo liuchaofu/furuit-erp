@@ -1,0 +1,18 @@
+
+.ke-container-black .ke-toolbar .ke-icon-remoteimage {
+    background-image: url(../img/download.png);
+    background-size: 16px 16px;
+}
+
+.ke-container-black .ke-toolbar .ke-icon-search {
+    background-image: url(../img/search.png);
+    background-position: 0 0;
+    background-size: 16px 16px;
+}
+
+
+.ke-container-black .ke-toolbar .ke-icon-math {
+    background-image: url(../img/math.png);
+    background-position: 0 0;
+    background-size: 16px 16px;
+}

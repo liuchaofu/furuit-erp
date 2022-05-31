@@ -1,0 +1,36 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="GET" action="">
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">修改详情:</label>
+        <div class="col-xs-12 col-sm-4">
+            修改前字段
+
+            <br>
+            {volist name="old" id="vo" key="k"}
+            <br>
+                {$vo}
+            <br>
+            ------------------------
+            {/volist}
+
+
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            修改后字段
+
+            <br>
+            {volist name="new" id="vo" key="k"}
+            <br>
+            {$vo}
+            <br>
+            ------------------------
+            {/volist}
+
+
+        </div>
+
+    </div>
+
+</form>

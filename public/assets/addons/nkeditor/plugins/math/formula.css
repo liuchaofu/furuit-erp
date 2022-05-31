@@ -1,0 +1,13 @@
+.tab-pane ul {
+    margin: 0px;
+    padding: 0px;
+}
+.tab-pane .formula-latex-item {
+    display: inline-block;
+    margin: 0px 3px 3px 0px;
+    width: 30px;
+    height: 30px;
+    border:1px solid #cccccc;
+    background-image: url("./images/formula.png");
+    cursor: pointer;
+}

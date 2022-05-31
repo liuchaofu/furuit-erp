@@ -1,0 +1,23 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="GET" action="">
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">详情:</label>
+        <div class="col-xs-12 col-sm-8">
+            字段名:字段值
+
+            <br>
+            {volist name="worth" id="vo" key="k"}
+            <br>
+                {$vo}
+            <br>
+            ------------------------
+            {/volist}
+
+
+        </div>
+
+    </div>
+
+</form>

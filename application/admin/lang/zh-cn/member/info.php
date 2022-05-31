@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'Id'               => '主键id',
+    'Member_id'        => '渠道商和商户id',
+    'Typedata'         => '类型',
+    'Typedata 0'  => '水果店主',
+    'Typedata 1' => '水果摊贩',
+    'Typedata 2' => '水果游商',
+    'Typedata 3' => '超市/配送',
+    'Typedata 4' => '消费者',
+    'Checkdata'         => '店招类型',
+    'Checkdata channel'  => '渠道商',
+    'Checkdata merchant' => '商户',
+    'Shop_name'        => '店招名称',
+    'Shop_image'       => '门牌照片',
+    'Name'             => '真实姓名',
+    'Phone'            => '电话号码',
+    'Id_card'          => '身份证号',
+    'City'             => '详细地址',
+    'Address'          => '地址',
+    'House_num'        => '门牌号',
+    'Createtime'       => '创建时间',
+    'Updatetime'       => '更新时间',
+    'Catedata'         => '判断店长还是员工 预留',
+    'Crm_member_id'    => 'crm的member_id',
+    'Crm_shop_id'      => 'crm的shop_id',
+    'State'            => '当前状态',
+    'State 0'          => '待认证',
+    'State 1'          => '正常',
+    'State 2'          => '禁用'
+];

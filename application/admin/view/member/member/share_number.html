@@ -1,0 +1,32 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="GET" action="">
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">分享人数:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-count" class="form-control" name="count" value="{$count}" type="text" disabled="disabled">
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">分享详情:</label>
+        <div class="col-xs-12 col-sm-8">
+            <br>
+            {foreach name="info" item="vo"}
+            <br>
+            头像:<img src="{$vo.head_image}" alt="无图片/路径不对" class="img-responsive" width="30" height="30">
+            昵称: {$vo.nickname}
+            <!--<input id="c-nickname" class="form-control" name="nickname" value="{$vo.nickname}" type="text"-->
+            <!--disabled="disabled" width="132">-->
+            分享时间:{$vo.createtime}
+            <br>
+            ---------------------------------------------------------------
+            <!--<input id="c-time" class="form-control" name="time" value="{$vo.createtime}" type="text"-->
+            <!--disabled="disabled" width="132">-->
+            {/foreach}
+        </div>
+
+    </div>
+
+</form>
